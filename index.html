@@ -3,79 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breathly - Privacy Policy & Terms</title>
+    <title>Breathe - Mindfulness & Breathing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fcfcfc;
+        :root {
+            --bg-gradient: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --text-main: #ffffff;
+            --text-muted: #b0c4de;
+            --accent: #4facfe;
         }
-        h1 { color: #4CAF8A; border-bottom: 2px solid #4CAF8A; padding-bottom: 10px; }
-        h2 { color: #555; margin-top: 30px; }
-        .container { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-        .nav { margin-bottom: 20px; }
-        .nav a { margin-right: 15px; color: #4CAF8A; text-decoration: none; font-weight: bold; }
-        .last-updated { font-style: italic; color: #777; margin-bottom: 30px; }
-        footer { margin-top: 50px; text-align: center; font-size: 0.9em; color: #888; }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        nav {
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: var(--text-main);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        section {
+            padding: 100px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 150px 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            background: -webkit-linear-gradient(#fff, #a1c4fd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(79, 172, 254, 0.6);
+        }
+
+        .glass-panel {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 50px;
+            margin-bottom: 50px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .glass-panel h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+            border-bottom: 1px solid var(--glass-border);
+            padding-bottom: 10px;
+        }
+
+        .glass-panel h3 {
+            font-size: 1.3rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .glass-panel p {
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        .glass-panel ul {
+            color: var(--text-muted);
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        .glass-panel li {
+            margin-bottom: 5px;
+        }
+
+        .highlight-box {
+            background: rgba(79, 172, 254, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 25px;
+            border-radius: 0 10px 10px 0;
+            margin-top: 30px;
+        }
+
+        .highlight-box h3 {
+            margin-top: 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: #fff;
+        }
+
+        .highlight-box a {
+            color: var(--accent);
+            font-weight: bold;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .highlight-box a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0,0,0,0.2);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 50px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            nav { padding: 20px; flex-direction: column; gap: 15px; }
+            .nav-links a { margin-left: 15px; margin-right: 15px; }
+            .hero h1 { font-size: 3rem; }
+            .glass-panel { padding: 30px; }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="nav">
+
+    <nav>
+        <a href="#" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4facfe;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></svg>
+            Breathe<span>App</span>
+        </a>
+        <div class="nav-links">
             <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms & Conditions</a>
+            <a href="#data-deletion">Data Deletion</a>
         </div>
+    </nav>
 
-        <header>
-            <h1>Breathly</h1>
-            <p class="last-updated">Last Updated: October 2023</p>
-        </header>
+    <section class="hero">
+        <h1>Find Your Center</h1>
+        <p>Your personal companion for mindfulness, guided breathing, and daily serenity. Take a deep breath and start your journey today.</p>
+        <a href="#privacy" class="btn">View Privacy Policy</a>
+    </section>
 
-        <section id="privacy">
+    <section id="privacy">
+        <div class="glass-panel">
             <h2>Privacy Policy</h2>
-            <p>Your privacy is important to us. This Privacy Policy explains how Breathly ("we", "us", or "our") collects, uses, and protects your information when you use our mobile application.</p>
+            <p>Last updated: June 2026</p>
+            <p>Welcome to BreatheApp. We are committed to protecting your privacy and ensuring you have a positive experience on our mobile application. This Privacy Policy outlines our practices regarding the collection, use, and disclosure of your information.</p>
+            
+            <h3>1. Information We Collect</h3>
+            <p>We believe in data minimization. The BreatheApp collects minimal information to function effectively:</p>
+            <ul>
+                <li><strong>Usage Data:</strong> We may collect anonymous data on how you interact with the app (e.g., session durations, features used) to improve our services.</li>
+                <li><strong>Device Information:</strong> We may collect basic device information such as OS version for compatibility and bug fixing.</li>
+                <li><strong>No Personal Identifiable Information (PII):</strong> We do not collect names, phone numbers, or exact location data unless explicitly provided by you for support purposes.</li>
+            </ul>
 
-            <h3>1. Data Collection</h3>
-            <p><strong>Personal Data:</strong> Breathly does not require you to create an account or provide personal identifiers like your name, email address, or phone number to use the core features of the app.</p>
-            <p><strong>Usage Data:</strong> We may collect non-personal information such as app usage statistics (e.g., session duration, frequency of use) to improve the app experience. This data is stored locally on your device unless you choose to sync it.</p>
-            <p><strong>Permissions:</strong> The app may request permissions for notifications (to send reminders) and Haptics (for vibration feedback). These are used strictly for app functionality.</p>
-
-            <h3>2. Data Security</h3>
-            <p>We implement industry-standard security measures to protect your data. Since most data is stored locally on your device, your privacy is largely under your control.</p>
+            <h3>2. How We Use Your Information</h3>
+            <p>The collected information is used solely to:</p>
+            <ul>
+                <li>Provide, maintain, and improve the application.</li>
+                <li>Analyze app usage and optimize user experience.</li>
+                <li>Address technical issues and provide customer support.</li>
+            </ul>
 
             <h3>3. Third-Party Services</h3>
-            <p>We do not sell or trade your data. We may use Google Play Services for app distribution and basic analytics.</p>
+            <p>We may use third-party services (such as analytics tools) that may collect information used to identify you. These services have their own privacy policies governing their data collection practices.</p>
 
-            <h3>4. Contact Us</h3>
-            <p>If you have questions about this policy, contact us at: <a href="mailto:support@breathly.app">support@breathly.app</a></p>
-        </section>
+            <h3>4. Security of Your Data</h3>
+            <p>We value your trust in providing us your information, and we are striving to use commercially acceptable means of protecting it. However, no method of transmission over the internet, or method of electronic storage is 100% secure and reliable.</p>
+            
+            <h3>5. Changes to This Privacy Policy</h3>
+            <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+        </div>
+    </section>
 
-        <hr>
+    <section id="data-deletion">
+        <div class="glass-panel">
+            <h2>Data Deletion Policy</h2>
+            <p>We respect your right to privacy and control over your personal data. If you wish to have any data associated with your use of the BreatheApp completely removed from our systems, you can request data deletion at any time.</p>
+            
+            <div class="highlight-box">
+                <h3>How to Request Data Deletion</h3>
+                <p>To initiate a data deletion request, please send an email to our support team at:<br><br>
+                <a href="mailto:pdate73@gmail.com">pdate73@gmail.com</a><br><br>
+                <strong>Subject:</strong> Data Deletion Request<br>
+                <strong>Body:</strong> Please include any relevant identifier (like the email you used for support) so we can locate and remove your information. We will process your request within 7 business days and confirm once the deletion is complete.</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="terms">
-            <h2>Terms & Conditions</h2>
-            <p>By downloading or using the Breathly app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app.</p>
+    <footer>
+        <p>&copy; 2026 BreatheApp. All rights reserved.</p>
+    </footer>
 
-            <h3>1. Use of the App</h3>
-            <p>Breathly is designed for personal, non-commercial use to assist with breathing exercises and relaxation. You are not allowed to copy, or modify the app, any part of the app, or our trademarks in any way.</p>
-
-            <h3>2. Health Disclaimer</h3>
-            <p><strong>Breathly is not a medical device.</strong> The breathing exercises provided are for informational and relaxation purposes only. If you have any underlying health conditions, particularly respiratory or cardiovascular issues, please consult with a healthcare professional before using this app.</p>
-
-            <h3>3. Changes to Terms</h3>
-            <p>We may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes.</p>
-
-            <h3>4. Limitation of Liability</h3>
-            <p>We will not be liable for any indirect, incidental, or consequential damages resulting from the use or inability to use the service.</p>
-        </section>
-
-        <footer>
-            <p>&copy; 2023 Breathly App. All rights reserved.</p>
-        </footer>
-    </div>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
