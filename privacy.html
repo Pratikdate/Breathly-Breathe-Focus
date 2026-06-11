@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - BreatheApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --text-main: #ffffff;
+            --text-muted: #b0c4de;
+            --accent: #4facfe;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background: var(--bg-gradient); background-attachment: fixed; color: var(--text-main); line-height: 1.6; min-height: 100vh; }
+        
+        nav {
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo { font-size: 1.5rem; font-weight: 800; letter-spacing: 2px; color: var(--text-main); text-decoration: none; display: flex; align-items: center; gap: 10px; }
+        .logo span { color: var(--accent); }
+        .nav-links a { color: var(--text-main); text-decoration: none; margin-left: 30px; font-weight: 600; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
+
+        section { padding: 100px 20px; max-width: 1000px; margin: 0 auto; }
+        .glass-panel {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 50px;
+            margin-bottom: 50px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+        .glass-panel h2 { font-size: 2rem; margin-bottom: 20px; color: var(--accent); border-bottom: 1px solid var(--glass-border); padding-bottom: 10px; }
+        .glass-panel h3 { font-size: 1.3rem; margin-top: 30px; margin-bottom: 15px; color: #fff; }
+        .glass-panel p, .glass-panel ul { color: var(--text-muted); margin-bottom: 15px; }
+        .glass-panel ul { padding-left: 20px; }
+        .glass-panel li { margin-bottom: 5px; }
+
+        .highlight-box {
+            background: rgba(79, 172, 254, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 25px;
+            border-radius: 0 10px 10px 0;
+            margin-top: 30px;
+        }
+        .highlight-box h3 { margin-top: 0; }
+        .highlight-box p { margin: 0; color: #fff; }
+        .highlight-box a { color: var(--accent); font-weight: bold; text-decoration: none; transition: opacity 0.3s; }
+        .highlight-box a:hover { opacity: 0.8; text-decoration: underline; }
+
+        footer { text-align: center; padding: 30px; background: rgba(0,0,0,0.2); color: var(--text-muted); font-size: 0.9rem; margin-top: 50px; }
+
+        @media (max-width: 768px) {
+            nav { padding: 20px; flex-direction: column; gap: 15px; }
+            .nav-links a { margin-left: 15px; margin-right: 15px; }
+            .glass-panel { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4facfe;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></svg>
+            Breathe<span>App</span>
+        </a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="#data-deletion">Data Deletion</a>
+        </div>
+    </nav>
+
+    <section id="privacy">
+        <div class="glass-panel">
+            <h2>Privacy Policy</h2>
+            <p>Last updated: July 2026</p>
+            <p>Welcome to BreatheApp. We are committed to protecting your privacy and ensuring you have a positive experience on our mobile application. This Privacy Policy outlines our practices regarding the collection, use, and disclosure of your information.</p>
+            
+            <h3>1. Complete Data Privacy</h3>
+            <p>We do not collect any personal data. Your health data, session history, and preferences are stored entirely locally on your device.</p>
+            <ul>
+                <li><strong>No Login Required:</strong> You never have to create an account.</li>
+                <li><strong>On-Device Storage:</strong> All session data stays on your phone.</li>
+                <li><strong>100% Free:</strong> No in-app purchases, no subscriptions, no tracking.</li>
+            </ul>
+
+            <h3>2. Information We Collect</h3>
+            <p>The BreatheApp collects absolutely zero Personal Identifiable Information (PII). We may use standard, anonymous, opt-in crash reporting tools natively provided by the OS to help us fix bugs, but we do not track your usage or collect analytics.</p>
+
+            <h3>3. Third-Party Services</h3>
+            <p>We do not share any data with third parties because we do not collect any data. The app operates entirely offline and does not require an internet connection for its core functionality.</p>
+            
+            <h3>4. Changes to This Privacy Policy</h3>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+        </div>
+    </section>
+
+    <section id="data-deletion">
+        <div class="glass-panel">
+            <h2>Data Deletion Policy</h2>
+            <p>Because we do not store your data on our servers, you have full control over it. To delete all your data, simply uninstall the BreatheApp from your device, or clear the app data in your device settings. This will permanently erase all your stored sessions and preferences.</p>
+            
+            <div class="highlight-box">
+                <h3>Support Inquiries</h3>
+                <p>If you have any questions about our privacy practices, please send an email to our support team at:<br><br>
+                <a href="mailto:pdate73@gmail.com">pdate73@gmail.com</a><br><br>
+                Please note that since we have no accounts or data stored on our end, we cannot retrieve or delete your data remotely.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BreatheApp. All rights reserved.</p>
+    </footer>
+</body>
+</html>

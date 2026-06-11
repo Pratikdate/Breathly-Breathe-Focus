@@ -1,7 +1,10 @@
 package com.shanacoder.breathly.ui.screens
 
+import android.app.Activity
 import android.app.NotificationManager
 import android.content.Context
+import android.content.ContextWrapper
+import android.view.WindowManager
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -58,6 +61,9 @@ fun SessionScreen(
     var dndWasEnabled by remember { mutableStateOf(false) }
 
     DisposableEffect(Unit) {
+        val activity = context.findActivity()
+        activity?.window?.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+
         scope.launch {
             dndWasEnabled = settingsManager.dndModeEnabled.first()
             if (dndWasEnabled && notificationManager.isNotificationPolicyAccessGranted) {
@@ -67,6 +73,7 @@ fun SessionScreen(
         }
 
         onDispose {
+            activity?.window?.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
             audioHapticManager.stopNatureSound()
             audioHapticManager.release()
             
@@ -230,4 +237,13 @@ fun SessionScreen(
             Text(if (isPaused) "Resume" else "Pause")
         }
     }
+}
+
+private fun Context.findActivity(): Activity? {
+    var currentContext = this
+    while (currentContext is ContextWrapper) {
+        if (currentContext is Activity) return currentContext
+        currentContext = currentContext.baseContext
+    }
+    return null
 }
