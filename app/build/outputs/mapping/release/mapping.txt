@@ -3,8 +3,8 @@
 # min_api: 24
 # common_typos_disable
 # {"id":"com.android.tools.r8.mapping","version":"2.2"}
-# pg_map_id: 8b4ac56
-# pg_map_hash: SHA-256 8b4ac566b2fa01d4fb5d851b54af03ade3e034cfe1ad4e1599bd2b05d1e3c168
+# pg_map_id: c695c93
+# pg_map_hash: SHA-256 c695c933ece3709e0245e799ba7fc4b625f7de675037edcebf2e80483ede814e
 _COROUTINE.ArtificialStackFrames -> R8$$REMOVED$$CLASS$$0:
 # {"id":"sourceFile","fileName":"CoroutineDebugging.kt"}
 _COROUTINE.CoroutineDebuggingKt -> R8$$REMOVED$$CLASS$$1:
@@ -19024,9 +19024,8 @@ androidx.compose.foundation.layout.BoxKt$boxMeasurePolicy$1$measure$5 -> m.o:
 # {"id":"sourceFile","fileName":"Box.kt"}
     int m.BoxKt$boxMeasurePolicy$1$measure$5.$r8$classId -> i
       # {"id":"com.android.tools.r8.synthesized"}
-    androidx.compose.ui.layout.Placeable[] $placeables -> j
-      # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/lang/Object;"}
-    java.util.List $measurables -> k
+    java.util.List $measurables -> j
+    androidx.compose.ui.layout.Placeable[] $placeables -> k
       # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/lang/Object;"}
     androidx.compose.ui.layout.MeasureScope $this_MeasurePolicy -> l
       # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/lang/Object;"}
@@ -19036,7 +19035,7 @@ androidx.compose.foundation.layout.BoxKt$boxMeasurePolicy$1$measure$5 -> m.o:
       # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/lang/Object;"}
     androidx.compose.ui.Alignment $alignment -> o
       # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/lang/Object;"}
-    1:1:void m.BoxKt$boxMeasurePolicy$1$measure$5.<init>(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,int):0:0 -> <init>
+    1:1:void m.BoxKt$boxMeasurePolicy$1$measure$5.<init>(java.lang.Object,java.util.List,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,int):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
     16:19:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
     16:19:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
@@ -19107,248 +19106,244 @@ androidx.compose.foundation.layout.BoxKt$boxMeasurePolicy$1$measure$5 -> m.o:
     85:87:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
     85:87:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
     85:87:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    88:114:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    88:114:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    88:114:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    115:117:java.lang.Object androidx.compose.runtime.Trace.beginSection(java.lang.String):0:0 -> m0
-    115:117:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    115:117:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    115:117:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    118:120:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    118:120:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    118:120:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    121:122:java.lang.Object androidx.compose.runtime.Recomposer.access$getStateLock$p(androidx.compose.runtime.Recomposer):0:0 -> m0
-    121:122:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    121:122:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    121:122:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    123:123:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    123:123:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    123:123:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    124:125:java.util.List androidx.compose.runtime.Recomposer.access$getCompositionInvalidations$p(androidx.compose.runtime.Recomposer):0:0 -> m0
-    124:125:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    124:125:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    124:125:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    126:147:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    126:147:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    126:147:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    148:149:java.util.List androidx.compose.runtime.Recomposer.access$getCompositionInvalidations$p(androidx.compose.runtime.Recomposer):0:0 -> m0
-    148:149:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    148:149:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    148:149:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    150:236:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    150:236:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    150:236:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    237:239:void androidx.compose.runtime.Recomposer.processCompositionError$default(androidx.compose.runtime.Recomposer,java.lang.Exception,androidx.compose.runtime.ControlledComposition,boolean,int,java.lang.Object):0:0 -> m0
-    237:239:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    237:239:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    237:239:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    240:245:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    240:245:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    240:245:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    246:250:void androidx.compose.runtime.Trace.endSection(java.lang.Object):0:0 -> m0
-    246:250:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    246:250:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    246:250:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    251:304:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    251:304:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    251:304:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    305:307:void androidx.compose.runtime.Recomposer.processCompositionError$default(androidx.compose.runtime.Recomposer,java.lang.Exception,androidx.compose.runtime.ControlledComposition,boolean,int,java.lang.Object):0:0 -> m0
-    305:307:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    305:307:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    305:307:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    308:359:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    308:359:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    308:359:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    360:362:void androidx.compose.runtime.Recomposer.processCompositionError$default(androidx.compose.runtime.Recomposer,java.lang.Exception,androidx.compose.runtime.ControlledComposition,boolean,int,java.lang.Object):0:0 -> m0
-    360:362:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    360:362:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    360:362:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    363:373:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    363:373:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    363:373:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    374:375:java.lang.Object androidx.compose.runtime.Recomposer.access$getStateLock$p(androidx.compose.runtime.Recomposer):0:0 -> m0
-    374:375:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    374:375:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    374:375:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    376:376:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    376:376:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    376:376:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    377:379:kotlinx.coroutines.CancellableContinuation androidx.compose.runtime.Recomposer.access$deriveStateLocked(androidx.compose.runtime.Recomposer):0:0 -> m0
-    377:379:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    377:379:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    377:379:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    380:380:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    380:380:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    380:380:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    381:387:void androidx.compose.runtime.snapshots.Snapshot$Companion.notifyObjectsInitialized():0:0 -> m0
-    381:387:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    381:387:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    381:387:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    388:393:void androidx.compose.runtime.Recomposer.access$setCompositionsRemoved$p(androidx.compose.runtime.Recomposer,java.util.Set):0:0 -> m0
-    388:393:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    388:393:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    388:393:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    394:440:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    394:440:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    394:440:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    441:442:java.lang.Object androidx.compose.runtime.Recomposer.access$getStateLock$p(androidx.compose.runtime.Recomposer):0:0 -> m0
-    441:442:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    441:442:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    441:442:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    443:443:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    443:443:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    443:443:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    444:445:java.util.List androidx.compose.runtime.Recomposer.access$getKnownCompositions$p(androidx.compose.runtime.Recomposer):0:0 -> m0
-    444:445:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    444:445:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    444:445:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    446:470:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    446:470:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    446:470:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    471:479:int androidx.compose.runtime.collection.IdentityArraySet.getSize():0:0 -> m0
-    471:479:int androidx.compose.runtime.collection.IdentityArraySet.size():0 -> m0
-    471:479:boolean androidx.compose.runtime.collection.IdentityArraySet$iterator$1.hasNext():0 -> m0
+    88:112:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    88:112:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    88:112:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    113:115:java.lang.Object androidx.compose.runtime.Trace.beginSection(java.lang.String):0:0 -> m0
+    113:115:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    113:115:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    113:115:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    116:118:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    116:118:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    116:118:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    119:120:java.lang.Object androidx.compose.runtime.Recomposer.access$getStateLock$p(androidx.compose.runtime.Recomposer):0:0 -> m0
+    119:120:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    119:120:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    119:120:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    121:121:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    121:121:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    121:121:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    122:123:java.util.List androidx.compose.runtime.Recomposer.access$getCompositionInvalidations$p(androidx.compose.runtime.Recomposer):0:0 -> m0
+    122:123:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    122:123:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    122:123:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    124:145:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    124:145:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    124:145:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    146:147:java.util.List androidx.compose.runtime.Recomposer.access$getCompositionInvalidations$p(androidx.compose.runtime.Recomposer):0:0 -> m0
+    146:147:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    146:147:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    146:147:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    148:234:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    148:234:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    148:234:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    235:237:void androidx.compose.runtime.Recomposer.processCompositionError$default(androidx.compose.runtime.Recomposer,java.lang.Exception,androidx.compose.runtime.ControlledComposition,boolean,int,java.lang.Object):0:0 -> m0
+    235:237:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    235:237:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    235:237:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    238:243:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    238:243:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    238:243:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    244:248:void androidx.compose.runtime.Trace.endSection(java.lang.Object):0:0 -> m0
+    244:248:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    244:248:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    244:248:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    249:302:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    249:302:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    249:302:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    303:305:void androidx.compose.runtime.Recomposer.processCompositionError$default(androidx.compose.runtime.Recomposer,java.lang.Exception,androidx.compose.runtime.ControlledComposition,boolean,int,java.lang.Object):0:0 -> m0
+    303:305:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    303:305:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    303:305:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    306:357:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    306:357:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    306:357:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    358:360:void androidx.compose.runtime.Recomposer.processCompositionError$default(androidx.compose.runtime.Recomposer,java.lang.Exception,androidx.compose.runtime.ControlledComposition,boolean,int,java.lang.Object):0:0 -> m0
+    358:360:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    358:360:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    358:360:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    361:371:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    361:371:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    361:371:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    372:373:java.lang.Object androidx.compose.runtime.Recomposer.access$getStateLock$p(androidx.compose.runtime.Recomposer):0:0 -> m0
+    372:373:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    372:373:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    372:373:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    374:374:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    374:374:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    374:374:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    375:377:kotlinx.coroutines.CancellableContinuation androidx.compose.runtime.Recomposer.access$deriveStateLocked(androidx.compose.runtime.Recomposer):0:0 -> m0
+    375:377:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    375:377:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    375:377:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    378:378:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    378:378:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    378:378:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    379:385:void androidx.compose.runtime.snapshots.Snapshot$Companion.notifyObjectsInitialized():0:0 -> m0
+    379:385:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    379:385:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    379:385:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    386:391:void androidx.compose.runtime.Recomposer.access$setCompositionsRemoved$p(androidx.compose.runtime.Recomposer,java.util.Set):0:0 -> m0
+    386:391:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    386:391:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    386:391:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    392:438:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    392:438:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    392:438:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    439:440:java.lang.Object androidx.compose.runtime.Recomposer.access$getStateLock$p(androidx.compose.runtime.Recomposer):0:0 -> m0
+    439:440:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    439:440:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    439:440:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    441:441:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    441:441:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    441:441:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    442:443:java.util.List androidx.compose.runtime.Recomposer.access$getKnownCompositions$p(androidx.compose.runtime.Recomposer):0:0 -> m0
+    442:443:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    442:443:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    442:443:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    444:468:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    444:468:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    444:468:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    469:477:int androidx.compose.runtime.collection.IdentityArraySet.getSize():0:0 -> m0
+    469:477:int androidx.compose.runtime.collection.IdentityArraySet.size():0 -> m0
+    469:477:boolean androidx.compose.runtime.collection.IdentityArraySet$iterator$1.hasNext():0 -> m0
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(2)"]}
-    471:479:boolean androidx.compose.runtime.CompositionImpl.observesAnyOf(java.util.Set):0 -> m0
-    471:479:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    471:479:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    471:479:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    480:483:java.lang.Object[] androidx.compose.runtime.collection.IdentityArraySet.getValues():0:0 -> m0
-    480:483:java.lang.Object androidx.compose.runtime.collection.IdentityArraySet$iterator$1.next():0 -> m0
+    469:477:boolean androidx.compose.runtime.CompositionImpl.observesAnyOf(java.util.Set):0 -> m0
+    469:477:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    469:477:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    469:477:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    478:481:java.lang.Object[] androidx.compose.runtime.collection.IdentityArraySet.getValues():0:0 -> m0
+    478:481:java.lang.Object androidx.compose.runtime.collection.IdentityArraySet$iterator$1.next():0 -> m0
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    480:483:boolean androidx.compose.runtime.CompositionImpl.observesAnyOf(java.util.Set):0 -> m0
-    480:483:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    480:483:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    480:483:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    484:490:java.lang.Object androidx.compose.runtime.collection.IdentityArraySet$iterator$1.next():0:0 -> m0
-    484:490:boolean androidx.compose.runtime.CompositionImpl.observesAnyOf(java.util.Set):0 -> m0
-    484:490:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    484:490:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    484:490:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    491:510:boolean androidx.compose.runtime.CompositionImpl.observesAnyOf(java.util.Set):0:0 -> m0
-    491:510:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    491:510:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    491:510:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    511:545:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    511:545:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    511:545:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    546:592:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0:0 -> m0
-    546:592:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
-    546:592:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    546:592:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    546:592:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    593:594:boolean androidx.compose.runtime.ComposerImpl.isComposing$runtime_release():0:0 -> m0
-    593:594:boolean androidx.compose.runtime.CompositionImpl.isComposing():0 -> m0
+    478:481:boolean androidx.compose.runtime.CompositionImpl.observesAnyOf(java.util.Set):0 -> m0
+    478:481:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    478:481:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    478:481:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    482:488:java.lang.Object androidx.compose.runtime.collection.IdentityArraySet$iterator$1.next():0:0 -> m0
+    482:488:boolean androidx.compose.runtime.CompositionImpl.observesAnyOf(java.util.Set):0 -> m0
+    482:488:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    482:488:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    482:488:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    489:508:boolean androidx.compose.runtime.CompositionImpl.observesAnyOf(java.util.Set):0:0 -> m0
+    489:508:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    489:508:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    489:508:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    509:543:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    509:543:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    509:543:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    544:590:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0:0 -> m0
+    544:590:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    544:590:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    544:590:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    544:590:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    591:592:boolean androidx.compose.runtime.ComposerImpl.isComposing$runtime_release():0:0 -> m0
+    591:592:boolean androidx.compose.runtime.CompositionImpl.isComposing():0 -> m0
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    593:594:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    591:592:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(2)"]}
-    593:594:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
-    593:594:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    593:594:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    593:594:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    595:598:boolean androidx.compose.runtime.ComposerImpl.isComposing$runtime_release():0:0 -> m0
-    595:598:boolean androidx.compose.runtime.CompositionImpl.isComposing():0 -> m0
+    591:592:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    591:592:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    591:592:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    591:592:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    593:596:boolean androidx.compose.runtime.ComposerImpl.isComposing$runtime_release():0:0 -> m0
+    593:596:boolean androidx.compose.runtime.CompositionImpl.isComposing():0 -> m0
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    595:598:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
-    595:598:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
-    595:598:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    595:598:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    595:598:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    599:601:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0:0 -> m0
-    599:601:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
-    599:601:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    599:601:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    599:601:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    602:608:kotlin.jvm.functions.Function1 androidx.compose.runtime.Recomposer.readObserverOf(androidx.compose.runtime.ControlledComposition):0:0 -> m0
-    602:608:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
-    602:608:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
-    602:608:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    602:608:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    602:608:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    609:616:kotlin.jvm.functions.Function1 androidx.compose.runtime.Recomposer.writeObserverOf(androidx.compose.runtime.ControlledComposition,androidx.compose.runtime.collection.IdentityArraySet):0:0 -> m0
-    609:616:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
-    609:616:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
-    609:616:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    609:616:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    609:616:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    617:639:androidx.compose.runtime.snapshots.MutableSnapshot androidx.compose.runtime.snapshots.Snapshot$Companion.takeMutableSnapshot(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):0:0 -> m0
-    617:639:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
-    617:639:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
-    617:639:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    617:639:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    617:639:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    640:704:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0:0 -> m0
-    640:704:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
-    640:704:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    640:704:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    640:704:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    705:720:androidx.compose.runtime.snapshots.MutableSnapshot androidx.compose.runtime.snapshots.Snapshot$Companion.takeMutableSnapshot(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):0:0 -> m0
-    705:720:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
-    705:720:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
-    705:720:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    705:720:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    705:720:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    721:730:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0:0 -> m0
-    721:730:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
-    721:730:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    721:730:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    721:730:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    731:746:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    731:746:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    731:746:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    747:754:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0:0 -> m0
-    747:754:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
-    747:754:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    747:754:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    747:754:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    755:758:androidx.compose.runtime.ControlledComposition androidx.compose.runtime.MovableContentStateReference.getComposition$runtime_release():0:0 -> m0
-    755:758:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    593:596:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    593:596:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    593:596:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    593:596:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    593:596:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    597:599:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0:0 -> m0
+    597:599:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    597:599:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    597:599:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    597:599:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    600:606:kotlin.jvm.functions.Function1 androidx.compose.runtime.Recomposer.readObserverOf(androidx.compose.runtime.ControlledComposition):0:0 -> m0
+    600:606:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    600:606:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    600:606:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    600:606:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    600:606:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    607:614:kotlin.jvm.functions.Function1 androidx.compose.runtime.Recomposer.writeObserverOf(androidx.compose.runtime.ControlledComposition,androidx.compose.runtime.collection.IdentityArraySet):0:0 -> m0
+    607:614:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    607:614:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    607:614:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    607:614:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    607:614:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    615:637:androidx.compose.runtime.snapshots.MutableSnapshot androidx.compose.runtime.snapshots.Snapshot$Companion.takeMutableSnapshot(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):0:0 -> m0
+    615:637:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    615:637:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    615:637:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    615:637:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    615:637:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    638:702:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0:0 -> m0
+    638:702:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    638:702:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    638:702:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    638:702:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    703:718:androidx.compose.runtime.snapshots.MutableSnapshot androidx.compose.runtime.snapshots.Snapshot$Companion.takeMutableSnapshot(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):0:0 -> m0
+    703:718:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    703:718:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    703:718:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    703:718:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    703:718:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    719:728:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0:0 -> m0
+    719:728:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    719:728:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    719:728:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    719:728:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    729:744:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    729:744:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    729:744:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    745:752:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0:0 -> m0
+    745:752:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    745:752:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    745:752:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    745:752:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    753:756:androidx.compose.runtime.ControlledComposition androidx.compose.runtime.MovableContentStateReference.getComposition$runtime_release():0:0 -> m0
+    753:756:java.util.List androidx.compose.runtime.Recomposer.performInsertValues(java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    755:758:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
-    755:758:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    755:758:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    755:758:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    759:761:void androidx.compose.runtime.Recomposer.processCompositionError$default(androidx.compose.runtime.Recomposer,java.lang.Exception,androidx.compose.runtime.ControlledComposition,boolean,int,java.lang.Object):0:0 -> m0
-    759:761:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    759:761:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    759:761:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    762:768:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    762:768:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    762:768:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    769:771:void androidx.compose.runtime.Recomposer.processCompositionError$default(androidx.compose.runtime.Recomposer,java.lang.Exception,androidx.compose.runtime.ControlledComposition,boolean,int,java.lang.Object):0:0 -> m0
-    769:771:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    769:771:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    769:771:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    772:779:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    772:779:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    772:779:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    780:782:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0:0 -> m0
-    780:782:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    783:788:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    783:788:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    783:788:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    789:791:void androidx.compose.runtime.Trace.endSection(java.lang.Object):0:0 -> m0
-    789:791:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    789:791:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    789:791:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    792:794:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
-    792:794:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    792:794:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    795:796:boolean androidx.compose.runtime.Recomposer.getHasBroadcastFrameClockAwaiters():0:0 -> m0
-    795:796:boolean androidx.compose.runtime.Recomposer.access$getHasBroadcastFrameClockAwaiters(androidx.compose.runtime.Recomposer):0 -> m0
-    795:796:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
-    795:796:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
-    795:796:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    797:800:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0:0 -> m0
-    801:864:androidx.compose.runtime.DisposableEffectResult com.shanacoder.breathly.ui.screens.SessionScreenKt$SessionScreen$1.invoke(androidx.compose.runtime.DisposableEffectScope):0:0 -> m0
-    801:864:java.lang.Object com.shanacoder.breathly.ui.screens.SessionScreenKt$SessionScreen$1.invoke(java.lang.Object):0 -> m0
-    801:864:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    865:868:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0:0 -> m0
-    869:935:void invoke(androidx.compose.ui.layout.Placeable$PlacementScope):0:0 -> m0
-    869:935:java.lang.Object invoke(java.lang.Object):0 -> m0
-    869:935:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
-    936:938:java.lang.Object invoke(java.lang.Object):0:0 -> m0
-    936:938:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    753:756:java.util.List androidx.compose.runtime.Recomposer.access$performInsertValues(androidx.compose.runtime.Recomposer,java.util.List,androidx.compose.runtime.collection.IdentityArraySet):0 -> m0
+    753:756:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    753:756:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    753:756:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    757:759:void androidx.compose.runtime.Recomposer.processCompositionError$default(androidx.compose.runtime.Recomposer,java.lang.Exception,androidx.compose.runtime.ControlledComposition,boolean,int,java.lang.Object):0:0 -> m0
+    757:759:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    757:759:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    757:759:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    760:766:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    760:766:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    760:766:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    767:769:void androidx.compose.runtime.Recomposer.processCompositionError$default(androidx.compose.runtime.Recomposer,java.lang.Exception,androidx.compose.runtime.ControlledComposition,boolean,int,java.lang.Object):0:0 -> m0
+    767:769:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    767:769:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    767:769:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    770:777:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    770:777:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    770:777:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    778:780:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0:0 -> m0
+    778:780:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    781:786:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    781:786:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    781:786:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    787:789:void androidx.compose.runtime.Trace.endSection(java.lang.Object):0:0 -> m0
+    787:789:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    787:789:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    787:789:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    790:792:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0:0 -> m0
+    790:792:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    790:792:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    793:794:boolean androidx.compose.runtime.Recomposer.getHasBroadcastFrameClockAwaiters():0:0 -> m0
+    793:794:boolean androidx.compose.runtime.Recomposer.access$getHasBroadcastFrameClockAwaiters(androidx.compose.runtime.Recomposer):0 -> m0
+    793:794:void androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(long):0 -> m0
+    793:794:java.lang.Object androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1.invoke(java.lang.Object):0 -> m0
+    793:794:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    795:798:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0:0 -> m0
+    799:863:void invoke(androidx.compose.ui.layout.Placeable$PlacementScope):0:0 -> m0
+    799:863:java.lang.Object invoke(java.lang.Object):0 -> m0
+    799:863:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
+    864:866:java.lang.Object invoke(java.lang.Object):0:0 -> m0
+    864:866:java.lang.Object m.BoxKt$boxMeasurePolicy$1$measure$5.invoke(java.lang.Object):0 -> m0
 androidx.compose.foundation.layout.BoxScopeInstance -> androidx.compose.foundation.layout.a:
 # {"id":"sourceFile","fileName":"Box.kt"}
     androidx.compose.foundation.layout.BoxScopeInstance INSTANCE -> a
@@ -119836,7 +119831,7 @@ com.shanacoder.breathly.ui.screens.CustomScreenKt$CustomScreen$3$1$2$1$1$1 -> q1
 com.shanacoder.breathly.ui.screens.CustomScreenKt$CustomScreen$3$1$4$1$1$1$1 -> q1.n:
 # {"id":"sourceFile","fileName":"CustomScreen.kt"}
     com.shanacoder.breathly.ui.screens.SuggestedPattern $pattern -> i
-      # {"id":"com.android.tools.r8.residualsignature","signature":"Lq1/b0;"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lq1/c0;"}
     androidx.compose.runtime.MutableState $selectedSuggestion$delegate -> j
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lz/a0;"}
     androidx.compose.runtime.MutableState $inhale$delegate -> k
@@ -119852,7 +119847,7 @@ com.shanacoder.breathly.ui.screens.CustomScreenKt$CustomScreen$3$1$4$1$1$1$1 -> 
     androidx.compose.runtime.MutableState $exerciseName$delegate -> p
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lz/a0;"}
     1:21:void <init>(com.shanacoder.breathly.ui.screens.SuggestedPattern,androidx.compose.runtime.MutableState,androidx.compose.runtime.MutableState,androidx.compose.runtime.MutableState,androidx.compose.runtime.MutableState,androidx.compose.runtime.MutableState,androidx.compose.runtime.MutableState,androidx.compose.runtime.MutableState):0:0 -> <init>
-      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lq1/b0;Lz/a0;Lz/a0;Lz/a0;Lz/a0;Lz/a0;Lz/a0;Lz/a0;)V"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lq1/c0;Lz/a0;Lz/a0;Lz/a0;Lz/a0;Lz/a0;Lz/a0;Lz/a0;)V"}
     1:4:java.lang.String com.shanacoder.breathly.ui.screens.SuggestedPattern.getName():0:0 -> n
     1:4:void invoke():0 -> n
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
@@ -122760,6 +122755,29 @@ com.shanacoder.breathly.ui.screens.ProgressScreenKt$ProgressScreen$4 -> q1.J:
     9:30:void invoke(androidx.compose.runtime.Composer,int):0:0 -> invoke
     9:30:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> invoke
     31:33:java.lang.Object invoke(java.lang.Object,java.lang.Object):0:0 -> invoke
+com.shanacoder.breathly.ui.screens.SessionScreenKt$SessionScreen$1 -> q1.M:
+# {"id":"sourceFile","fileName":"SessionScreen.kt"}
+    android.content.Context $context -> i
+    kotlinx.coroutines.CoroutineScope $scope -> j
+      # {"id":"com.android.tools.r8.residualsignature","signature":"LO1/z;"}
+    com.shanacoder.breathly.data.SettingsManager $settingsManager -> k
+    android.app.NotificationManager $notificationManager -> l
+    androidx.compose.runtime.MutableState $dndWasEnabled$delegate -> m
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lz/a0;"}
+    androidx.compose.runtime.MutableIntState $originalFilter$delegate -> n
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lz/e0;"}
+    com.shanacoder.breathly.audio.AudioHapticManager $audioHapticManager -> o
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lo1/b;"}
+    1:19:void <init>(android.content.Context,kotlinx.coroutines.CoroutineScope,com.shanacoder.breathly.data.SettingsManager,android.app.NotificationManager,androidx.compose.runtime.MutableState,androidx.compose.runtime.MutableIntState,com.shanacoder.breathly.audio.AudioHapticManager):0:0 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroid/content/Context;LT1/e;Lcom/shanacoder/breathly/data/SettingsManager;Landroid/app/NotificationManager;Lz/a0;Lz/e0;Lo1/b;)V"}
+    3:7:androidx.compose.runtime.DisposableEffectResult invoke(androidx.compose.runtime.DisposableEffectScope):0:0 -> m0
+    3:7:java.lang.Object invoke(java.lang.Object):0 -> m0
+    8:37:android.app.Activity com.shanacoder.breathly.ui.screens.SessionScreenKt.findActivity(android.content.Context):0:0 -> m0
+    8:37:android.app.Activity com.shanacoder.breathly.ui.screens.SessionScreenKt.access$findActivity(android.content.Context):0 -> m0
+    8:37:androidx.compose.runtime.DisposableEffectResult invoke(androidx.compose.runtime.DisposableEffectScope):0 -> m0
+    8:37:java.lang.Object invoke(java.lang.Object):0 -> m0
+    38:85:androidx.compose.runtime.DisposableEffectResult invoke(androidx.compose.runtime.DisposableEffectScope):0:0 -> m0
+    38:85:java.lang.Object invoke(java.lang.Object):0 -> m0
 com.shanacoder.breathly.ui.screens.SessionScreenKt$SessionScreen$1$1 -> q1.K:
 # {"id":"sourceFile","fileName":"SessionScreen.kt"}
     java.lang.Object L$0 -> i
@@ -122790,32 +122808,33 @@ com.shanacoder.breathly.ui.screens.SessionScreenKt$SessionScreen$1$1 -> q1.K:
     85:90:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> invokeSuspend
 com.shanacoder.breathly.ui.screens.SessionScreenKt$SessionScreen$1$invoke$$inlined$onDispose$1 -> q1.L:
 # {"id":"sourceFile","fileName":"Effects.kt"}
-    com.shanacoder.breathly.audio.AudioHapticManager $audioHapticManager$inlined -> a
+    android.app.Activity $activity$inlined -> a
+    com.shanacoder.breathly.audio.AudioHapticManager $audioHapticManager$inlined -> b
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lo1/b;"}
-    android.app.NotificationManager $notificationManager$inlined -> b
-    androidx.compose.runtime.MutableState $dndWasEnabled$delegate$inlined -> c
+    android.app.NotificationManager $notificationManager$inlined -> c
+    androidx.compose.runtime.MutableState $dndWasEnabled$delegate$inlined -> d
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lz/a0;"}
-    androidx.compose.runtime.MutableIntState $originalFilter$delegate$inlined -> d
+    androidx.compose.runtime.MutableIntState $originalFilter$delegate$inlined -> e
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lz/e0;"}
-    1:12:void <init>(com.shanacoder.breathly.audio.AudioHapticManager,android.app.NotificationManager,androidx.compose.runtime.MutableState,androidx.compose.runtime.MutableIntState):0:0 -> <init>
-      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lo1/b;Landroid/app/NotificationManager;Lz/a0;Lz/e0;)V"}
-    1:5:void com.shanacoder.breathly.audio.AudioHapticManager.stopNatureSound():0:0 -> a
-    1:5:void dispose():0 -> a
+    1:14:void <init>(android.app.Activity,com.shanacoder.breathly.audio.AudioHapticManager,android.app.NotificationManager,androidx.compose.runtime.MutableState,androidx.compose.runtime.MutableIntState):0:0 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroid/app/Activity;Lo1/b;Landroid/app/NotificationManager;Lz/a0;Lz/e0;)V"}
+    16:20:void com.shanacoder.breathly.audio.AudioHapticManager.stopNatureSound():0:0 -> a
+    16:20:void dispose():0 -> a
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    6:9:void com.shanacoder.breathly.audio.AudioHapticManager.release():0:0 -> a
-    6:9:void dispose():0 -> a
+    21:24:void com.shanacoder.breathly.audio.AudioHapticManager.release():0:0 -> a
+    21:24:void dispose():0 -> a
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    10:24:void com.shanacoder.breathly.audio.AudioHapticManager.release():0:0 -> a
-    10:24:void dispose():0 -> a
-    25:38:boolean com.shanacoder.breathly.ui.screens.SessionScreenKt.SessionScreen$lambda$23(androidx.compose.runtime.MutableState):0:0 -> a
-    25:38:boolean com.shanacoder.breathly.ui.screens.SessionScreenKt.access$SessionScreen$lambda$23(androidx.compose.runtime.MutableState):0 -> a
-    25:38:void dispose():0 -> a
-    39:46:void dispose():0:0 -> a
-    47:52:int com.shanacoder.breathly.ui.screens.SessionScreenKt.SessionScreen$lambda$20(androidx.compose.runtime.MutableIntState):0:0 -> a
-    47:52:int com.shanacoder.breathly.ui.screens.SessionScreenKt.access$SessionScreen$lambda$20(androidx.compose.runtime.MutableIntState):0 -> a
-    47:52:void dispose():0 -> a
-    53:56:void dispose():0:0 -> a
-com.shanacoder.breathly.ui.screens.SessionScreenKt$SessionScreen$2 -> q1.M:
+    25:39:void com.shanacoder.breathly.audio.AudioHapticManager.release():0:0 -> a
+    25:39:void dispose():0 -> a
+    40:53:boolean com.shanacoder.breathly.ui.screens.SessionScreenKt.SessionScreen$lambda$23(androidx.compose.runtime.MutableState):0:0 -> a
+    40:53:boolean com.shanacoder.breathly.ui.screens.SessionScreenKt.access$SessionScreen$lambda$23(androidx.compose.runtime.MutableState):0 -> a
+    40:53:void dispose():0 -> a
+    54:61:void dispose():0:0 -> a
+    62:67:int com.shanacoder.breathly.ui.screens.SessionScreenKt.SessionScreen$lambda$20(androidx.compose.runtime.MutableIntState):0:0 -> a
+    62:67:int com.shanacoder.breathly.ui.screens.SessionScreenKt.access$SessionScreen$lambda$20(androidx.compose.runtime.MutableIntState):0 -> a
+    62:67:void dispose():0 -> a
+    68:71:void dispose():0:0 -> a
+com.shanacoder.breathly.ui.screens.SessionScreenKt$SessionScreen$2 -> q1.N:
 # {"id":"sourceFile","fileName":"SessionScreen.kt"}
     boolean Z$0 -> i
     boolean Z$1 -> j
@@ -122915,7 +122934,7 @@ com.shanacoder.breathly.ui.screens.SessionScreenKt$SessionScreen$2 -> q1.M:
     473:477:java.lang.Integer kotlin.coroutines.jvm.internal.Boxing.boxInt(int):0:0 -> invokeSuspend
     473:477:java.lang.Object invokeSuspend(java.lang.Object):0 -> invokeSuspend
     478:496:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> invokeSuspend
-com.shanacoder.breathly.ui.screens.SessionScreenKt$SessionScreen$3$1 -> q1.N:
+com.shanacoder.breathly.ui.screens.SessionScreenKt$SessionScreen$3$1 -> q1.O:
 # {"id":"sourceFile","fileName":"SessionScreen.kt"}
     int label -> i
     androidx.compose.runtime.MutableState $isPaused$delegate -> j
@@ -122938,7 +122957,7 @@ com.shanacoder.breathly.ui.screens.SessionScreenKt$SessionScreen$3$1 -> q1.N:
     57:64:void com.shanacoder.breathly.ui.screens.SessionScreenKt.access$SessionScreen$lambda$8(androidx.compose.runtime.MutableState,int):0 -> invokeSuspend
     57:64:java.lang.Object invokeSuspend(java.lang.Object):0 -> invokeSuspend
     65:67:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> invokeSuspend
-com.shanacoder.breathly.ui.screens.SessionScreenKt$SessionScreen$5 -> q1.O:
+com.shanacoder.breathly.ui.screens.SessionScreenKt$SessionScreen$5 -> q1.P:
 # {"id":"sourceFile","fileName":"SessionScreen.kt"}
     java.lang.String $name -> i
     float $inhale -> j
@@ -122956,7 +122975,7 @@ com.shanacoder.breathly.ui.screens.SessionScreenKt$SessionScreen$5 -> q1.O:
     9:41:void invoke(androidx.compose.runtime.Composer,int):0:0 -> invoke
     9:41:java.lang.Object invoke(java.lang.Object,java.lang.Object):0 -> invoke
     42:44:java.lang.Object invoke(java.lang.Object,java.lang.Object):0:0 -> invoke
-com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2 -> q1.Z:
+com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2 -> q1.a0:
 # {"id":"sourceFile","fileName":"SettingsScreen.kt"}
     float $bottomPadding -> i
     androidx.compose.runtime.State $soundsEnabled$delegate -> j
@@ -123712,7 +123731,7 @@ com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2 -> q1.Z:
     3004:3004:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():0 -> d0
     3004:3004:void invoke(androidx.compose.foundation.layout.PaddingValues,androidx.compose.runtime.Composer,int):0 -> d0
     3004:3004:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):0 -> d0
-com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$1 -> q1.Q:
+com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$1 -> q1.S:
 # {"id":"sourceFile","fileName":"SettingsScreen.kt"}
     int q1.SettingsScreenKt$SettingsScreen$2$1$1.$r8$classId -> i
       # {"id":"com.android.tools.r8.synthesized"}
@@ -123729,7 +123748,7 @@ com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$1 -> q1.Q
     30:44:void invoke(boolean):0:0 -> m0
     30:44:java.lang.Object invoke(java.lang.Object):0 -> m0
     45:48:java.lang.Object invoke(java.lang.Object):0:0 -> m0
-com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$1$1 -> q1.P:
+com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$1$1 -> q1.Q:
 # {"id":"sourceFile","fileName":"SettingsScreen.kt"}
     int label -> i
     com.shanacoder.breathly.BreathlyViewModel $viewModel -> j
@@ -123745,7 +123764,7 @@ com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$1$1 -> q1
     25:28:java.lang.Object invokeSuspend(java.lang.Object):0 -> invokeSuspend
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
     29:42:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> invokeSuspend
-com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$2$1 -> q1.S:
+com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$2$1 -> q1.T:
 # {"id":"sourceFile","fileName":"SettingsScreen.kt"}
     int label -> i
     com.shanacoder.breathly.BreathlyViewModel $viewModel -> j
@@ -123766,7 +123785,7 @@ com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$2$1 -> q1
     33:43:boolean com.shanacoder.breathly.ui.screens.SettingsScreenKt.access$SettingsScreen_6a0pyJM$lambda$1(androidx.compose.runtime.State):0 -> invokeSuspend
     33:43:java.lang.Object invokeSuspend(java.lang.Object):0 -> invokeSuspend
     44:55:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> invokeSuspend
-com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$4$1 -> q1.T:
+com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$4$1 -> q1.U:
 # {"id":"sourceFile","fileName":"SettingsScreen.kt"}
     int label -> i
     com.shanacoder.breathly.BreathlyViewModel $viewModel -> j
@@ -123782,7 +123801,7 @@ com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$4$1 -> q1
     25:28:java.lang.Object invokeSuspend(java.lang.Object):0 -> invokeSuspend
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
     29:42:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> invokeSuspend
-com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$5$1 -> q1.U:
+com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$5$1 -> q1.V:
 # {"id":"sourceFile","fileName":"SettingsScreen.kt"}
     int label -> i
     com.shanacoder.breathly.BreathlyViewModel $viewModel -> j
@@ -123804,7 +123823,7 @@ com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$5$1 -> q1
     38:45:java.lang.String com.shanacoder.breathly.ui.screens.SettingsScreenKt.access$SettingsScreen_6a0pyJM$lambda$4(androidx.compose.runtime.State):0 -> invokeSuspend
     38:45:java.lang.Object invokeSuspend(java.lang.Object):0 -> invokeSuspend
     46:84:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> invokeSuspend
-com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$5$2 -> q1.V:
+com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$5$2 -> q1.W:
 # {"id":"sourceFile","fileName":"SettingsScreen.kt"}
     int label -> i
     com.shanacoder.breathly.BreathlyViewModel $viewModel -> j
@@ -123823,7 +123842,7 @@ com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$5$2 -> q1
     39:79:void com.shanacoder.breathly.notifications.NotificationScheduler.cancelNotification(android.content.Context):0:0 -> invokeSuspend
     39:79:java.lang.Object invokeSuspend(java.lang.Object):0 -> invokeSuspend
     80:82:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> invokeSuspend
-com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$6$$ExternalSyntheticLambda0 -> q1.W:
+com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$6$$ExternalSyntheticLambda0 -> q1.X:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
     kotlinx.coroutines.CoroutineScope com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$6$$InternalSyntheticLambda$1$bf0d0869f97e2144d6079d294c197323b863d67e41b6fc0def3c22846bea05d5$0.f$0 -> a
@@ -123839,7 +123858,7 @@ com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$6$$Extern
       # {"id":"com.android.tools.r8.residualsignature","signature":"(LT1/e;Ln1/l;Landroid/content/Context;)V"}
     1:37:void com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$6.invoke$lambda$0(kotlinx.coroutines.CoroutineScope,com.shanacoder.breathly.BreathlyViewModel,android.content.Context,android.widget.TimePicker,int,int):0:0 -> onTimeSet
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroid/widget/TimePicker;II)V"}
-com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$6$1$1 -> q1.X:
+com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$6$1$1 -> q1.Y:
 # {"id":"sourceFile","fileName":"SettingsScreen.kt"}
     int label -> i
     int $h -> j
@@ -123860,7 +123879,7 @@ com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$6$1$1 -> 
     54:57:java.lang.Object invokeSuspend(java.lang.Object):0 -> invokeSuspend
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
     58:74:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> invokeSuspend
-com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$8$1 -> q1.Y:
+com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$8$1 -> q1.Z:
 # {"id":"sourceFile","fileName":"SettingsScreen.kt"}
     int label -> i
     com.shanacoder.breathly.BreathlyViewModel $viewModel -> j
@@ -123876,7 +123895,7 @@ com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$2$1$8$1 -> q1
     25:28:java.lang.Object invokeSuspend(java.lang.Object):0 -> invokeSuspend
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
     29:42:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> invokeSuspend
-com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$notificationLauncher$1$1 -> q1.a0:
+com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$notificationLauncher$1$1 -> q1.b0:
 # {"id":"sourceFile","fileName":"SettingsScreen.kt"}
     int label -> i
     com.shanacoder.breathly.BreathlyViewModel $viewModel -> j
@@ -123898,7 +123917,7 @@ com.shanacoder.breathly.ui.screens.SettingsScreenKt$SettingsScreen$notificationL
     38:45:java.lang.String com.shanacoder.breathly.ui.screens.SettingsScreenKt.access$SettingsScreen_6a0pyJM$lambda$4(androidx.compose.runtime.State):0 -> invokeSuspend
     38:45:java.lang.Object invokeSuspend(java.lang.Object):0 -> invokeSuspend
     46:84:java.lang.Object invokeSuspend(java.lang.Object):0:0 -> invokeSuspend
-com.shanacoder.breathly.ui.screens.SuggestedPattern -> q1.b0:
+com.shanacoder.breathly.ui.screens.SuggestedPattern -> q1.c0:
 # {"id":"sourceFile","fileName":"CustomScreen.kt"}
     java.lang.String name -> a
     java.lang.String label -> b
