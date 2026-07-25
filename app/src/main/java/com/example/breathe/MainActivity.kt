@@ -35,7 +35,7 @@ import com.shanacoder.breathly.ui.screens.HomeScreen
 import com.shanacoder.breathly.ui.screens.CustomScreen
 import com.shanacoder.breathly.ui.screens.ProgressScreen
 import com.shanacoder.breathly.ui.screens.SessionScreen
-import com.google.android.play.core.review.ReviewManagerFactory
+import com.shanacoder.breathly.util.PlayReviewHelper
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -57,15 +57,7 @@ fun BreathlyApp() {
     val context = LocalContext.current
 
     val requestReview = {
-        val manager = ReviewManagerFactory.create(context)
-        val request = manager.requestReviewFlow()
-        request.addOnCompleteListener { task ->
-            if (task.isSuccessful) {
-                val reviewInfo = task.result
-                manager.launchReviewFlow(context as Activity, reviewInfo)
-            }
-        }
-        Unit
+        PlayReviewHelper.launchReviewFlow(context)
     }
 
     Scaffold(
@@ -185,7 +177,8 @@ fun BreathlyApp() {
                 com.shanacoder.breathly.ui.screens.SettingsScreen(
                     viewModel = viewModel,
                     onNavigateBack = { navController.popBackStack() },
-                    bottomPadding = innerPadding.calculateBottomPadding()
+                    bottomPadding = innerPadding.calculateBottomPadding(),
+                    onRequestReview = requestReview
                 )
             }
             composable("session/{name}/{inhale}/{hold1}/{exhale}/{hold2}/{cycles}") { backStackEntry ->
@@ -207,7 +200,8 @@ fun BreathlyApp() {
                         viewModel.recordSession(durationSeconds, name)
                         navController.popBackStack()
                     },
-                    onNavigateBack = { navController.popBackStack() }
+                    onNavigateBack = { navController.popBackStack() },
+                    onRequestReview = requestReview
                 )
             }
         }

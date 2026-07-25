@@ -18,6 +18,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBackIosNew
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Share
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -39,7 +40,8 @@ import java.util.Calendar
 fun SettingsScreen(
     viewModel: BreathlyViewModel,
     onNavigateBack: () -> Unit,
-    bottomPadding: androidx.compose.ui.unit.Dp = 0.dp
+    bottomPadding: androidx.compose.ui.unit.Dp = 0.dp,
+    onRequestReview: () -> Unit = {}
 ) {
     val soundsEnabled by viewModel.settingsManager.soundsEnabled.collectAsState(initial = true)
     val followRhythmEnabled by viewModel.settingsManager.followRhythmEnabled.collectAsState(initial = true)
@@ -228,6 +230,25 @@ fun SettingsScreen(
             Spacer(modifier = Modifier.height(32.dp))
 
             Text("General", fontSize = 14.sp, fontWeight = FontWeight.Bold, color = Color.Gray, modifier = Modifier.padding(bottom = 8.dp))
+
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clickable { onRequestReview() }
+                    .padding(vertical = 12.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text("Rate & Review", fontSize = 16.sp, fontWeight = FontWeight.SemiBold, color = Color(0xFF333333))
+                    Text("Leave a review on Google Play Store", fontSize = 12.sp, color = Color.Gray)
+                }
+                Icon(
+                    imageVector = Icons.Filled.Star,
+                    contentDescription = "Rate App",
+                    tint = Color(0xFFFFB300),
+                    modifier = Modifier.size(20.dp)
+                )
+            }
 
             Row(
                 modifier = Modifier

@@ -42,11 +42,13 @@ fun SessionScreen(
     hold2: Float,
     cycles: Int,
     onSessionComplete: (Int) -> Unit,
-    onNavigateBack: () -> Unit
+    onNavigateBack: () -> Unit,
+    onRequestReview: () -> Unit = {}
 ) {
     var currentCycle by remember { mutableStateOf(1) }
     var isPaused by remember { mutableStateOf(false) }
     var secondsElapsed by remember { mutableStateOf(0) }
+    var showCompletionDialog by remember { mutableStateOf(false) }
     var currentPhase by remember { mutableStateOf(BreathPhase.INHALE) }
     var phaseText by remember { mutableStateOf("Breathe In") }
 
@@ -139,7 +141,7 @@ fun SessionScreen(
                     if (currentCycle < cycles) {
                         currentCycle++
                     } else {
-                        onSessionComplete(secondsElapsed)
+                        showCompletionDialog = true
                         break
                     }
                 }
@@ -236,6 +238,42 @@ fun SessionScreen(
             Spacer(modifier = Modifier.width(8.dp))
             Text(if (isPaused) "Resume" else "Pause")
         }
+    }
+
+    if (showCompletionDialog) {
+        AlertDialog(
+            onDismissRequest = {
+                onSessionComplete(secondsElapsed)
+            },
+            title = { Text("Session Completed! 🌸", fontWeight = FontWeight.Bold) },
+            text = {
+                Text(
+                    "Wonderful job! You completed $cycles cycles of $name.\n\nEnjoying Breathly? Leaving a review on Google Play helps others discover calm and focus.",
+                    fontSize = 14.sp,
+                    color = Color(0xFF555555)
+                )
+            },
+            confirmButton = {
+                Button(
+                    onClick = {
+                        onRequestReview()
+                        onSessionComplete(secondsElapsed)
+                    },
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF4CAF8A))
+                ) {
+                    Text("Rate on Play Store", color = Color.White)
+                }
+            },
+            dismissButton = {
+                TextButton(
+                    onClick = {
+                        onSessionComplete(secondsElapsed)
+                    }
+                ) {
+                    Text("Done", color = Color.Gray)
+                }
+            }
+        )
     }
 }
 
